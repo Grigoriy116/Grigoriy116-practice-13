@@ -11,13 +11,12 @@ function calc(a, b, operation) {
             return a - b;
         case "multi":
             return a * b;
+        default:
+            return "Invalid operation"
     }
 }
 
-let x = calc(1, 2, "add");
-console.log(x);
-let y = calc(1, 2, "substract");
-console.log(y);
-let z = calc(1, 2, "multi");
-console.log(z);
+
+console.log(calc('add', 1, 2));
+
 
